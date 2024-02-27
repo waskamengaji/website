@@ -6,8 +6,8 @@ const config = {
   preprocess: [vitePreprocess()],
   kit: {
     adapter: adapter({
-      runtime: 'edge',
-      regions: 'sin1',
+      runtime: 'nodejs20.x',
+      regions: ['sin1'],
       split: true,
     }),
     alias: {
