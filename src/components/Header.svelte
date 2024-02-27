@@ -5,9 +5,9 @@
 
 <header class="flex flex-col items-center justify-center">
   <div
-    class="w-full h-28 md:h-40 md:rounded-t-lg bg-cover aos-init aos-animate"
+    class="w-full h-28 md:h-40 md:rounded-t-lg bg-cover"
     style="background-image:url('/images/cover.webp');background-position:center,bottom" />
-  <div class="rounded-full bg-white border border-2 -mt-[60px] aos-init aos-animate">
+  <div class="rounded-full bg-white border border-2 -mt-[60px]">
     <div class="overflow-hidden rounded-full">
       <enhanced:img
         src={logo}
@@ -19,7 +19,7 @@
   </div>
 
   <div class="pt-5 px-8">
-    <div class="flex flex-col justify-center items-center space-y-3 aos-init aos-animate">
+    <div class="flex flex-col justify-center items-center space-y-3">
       <div class="flex flex-col gap-1 items-center text-center">
         <h1 class="text-2xl font-medium">{config.name}</h1>
         <div class="flex gap-2 text-[15px] text-neutral-500">{config.address}</div>
