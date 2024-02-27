@@ -1,0 +1,19 @@
+@import url(https://fonts.bunny.net/css?family=sora:100,200,300,400,500,600,700,800);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --rsbs-max-w: 30rem;
+  --rsbs-ml: auto;
+  --rsbs-mr: auto;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: #eceff3;
+}

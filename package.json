@@ -1,31 +1,84 @@
 {
-	"name": "waskamengaji",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@sveltejs/adapter-auto": "^1.0.0-next.90",
-		"@sveltejs/kit": "^1.0.0-next.587",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^3.54.0",
-		"svelte-check": "^2.9.2",
-		"tslib": "^2.4.1",
-		"typescript": "^4.9.3",
-		"vite": "^4.0.0"
-	},
-	"type": "module"
+  "name": "waskamengaji",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false,
+    "quoteProps": "consistent",
+    "bracketSameLine": true,
+    "arrowParens": "always",
+    "printWidth": 100,
+    "plugins": [
+      "prettier-plugin-svelte"
+    ],
+    "pluginSearchDirs": [
+      "."
+    ],
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && yarn lint --fix && git add -A",
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@sveltejs/adapter-auto": "^1.0.0-next.90",
+    "@sveltejs/enhanced-img": "^0.1.8",
+    "@sveltejs/kit": "^1.0.0-next.587",
+    "@types/html-minifier-terser": "^7.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "autoprefixer": "^10.4.17",
+    "classnames": "^2.5.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
+    "husky": "^9.0.11",
+    "phosphor-svelte": "^1.4.2",
+    "postcss": "^8.4.35",
+    "prettier": "^2.8.0",
+    "prettier-plugin-svelte": "^2.8.1",
+    "sass": "^1.71.0",
+    "sharp": "^0.33.2",
+    "svelte": "^3.54.0",
+    "svelte-bootstrap-icons": "^3.1.1",
+    "svelte-boxicons": "^1.0.2",
+    "svelte-check": "^2.9.2",
+    "svelte-fa": "^4.0.2",
+    "tailwindcss": "^3.4.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
 }

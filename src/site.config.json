@@ -1,0 +1,34 @@
+{
+  "name": "Wastukancana Mengaji",
+  "address": "Purwakarta, Indonesia",
+  "bio": "Media Dakwah al-Qur'an dan as-Sunnah",
+  "email": "waskamengaji@gmail.com",
+  "socials": {
+    "facebook": null,
+    "instagram": "https://www.instagram.com/waskamengaji",
+    "twitter": null,
+    "telegram": "https://waskamengaji.t.me",
+    "whatsapp": "https://whatsapp.com/channel/0029VaLNwlQ9mrGhMqG50B2a",
+    "youtube": null
+  },
+  "links": [
+    {
+      "icon": "BxPin",
+      "label": "Bergabung ke Komunitas",
+      "url": "https://ig.me/m/waskamengaji",
+      "background": "#047857"
+    },
+    {
+      "icon": "BxDonateHeart",
+      "label": "We Stand with Palestine",
+      "url": "https://s.id/standwithpalestine",
+      "background": "#0369a1"
+    },
+    {
+      "icon": "BxLink",
+      "label": "Purwakarta Mengaji",
+      "url": "https://www.instagram.com/purwakartamengaji",
+      "background": "#e11d48"
+    }
+  ]
+}
